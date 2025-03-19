@@ -1,6 +1,7 @@
 
 body{
     background-color: #F8F2DE ;
+    font-family: 'Montserrat', sans-serif;
 }
 .fs-4{
     color: black;
@@ -8,9 +9,6 @@ body{
     
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-}
 .pozadina{
     
         background-image: url('./images/horizontal-topographic-map-black.jpg'); /* Replace with your image path */
@@ -219,4 +217,7 @@ div {
 }
 .footer-link:hover{
     color:#ECDCBF;
+}
+.slika {
+    margin-left: auto; /* This will push the image to the right */
 }
