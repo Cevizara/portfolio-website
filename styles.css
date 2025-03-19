@@ -1,0 +1,222 @@
+
+body{
+    background-color: #F8F2DE ;
+}
+.fs-4{
+    color: black;
+    font-weight: bold;
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.pozadina{
+    
+        background-image: url('./images/horizontal-topographic-map-black.jpg'); /* Replace with your image path */
+        background-size: cover; /* Makes the image cover the entire screen */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents tiling */
+        
+        margin: 0;
+    
+    
+}
+
+
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: black;
+    --bs-nav-link-hover-color: #A31D1D;
+    --bs-nav-link-disabled-color: var(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
+.gradient-background {
+    background: linear-gradient(300deg, #D84040 , #ECDCBF, #A31D1D);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+.container-fluid{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%; 
+    flex-wrap: nowrap;
+}
+
+.tekst{
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+@media (max-width: 768px) {
+    .tekst, .slika {
+        width: 100%;
+    }
+}
+.skillscontainer {
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Allow items to move to a new row when needed */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Add space between items */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.skillscontainer > * {
+    /* background-color: #f2f2f2; */
+    color: #ECDCBF;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%; /* Adjust width */
+    max-width: 1200px; /* Optional: Prevent it from becoming too wide */
+}
+
+@media (max-width: 768px) {
+    .skillscontainer {
+        grid-template-columns: 1fr;
+    }
+}
+h5{
+    font-weight: 600;
+}
+li{
+    padding: 10px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+.zastava{
+    
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    height: 17px;
+    /* border: 1px solid black; */
+}
+.col{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-style: italic;
+    
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+/* body {
+    color: #40514e;
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+} */
+.contact-me{
+    color: #40514e;
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+}
+.bottom-container {
+    text-align: center;
+   
+    padding: 50px 0 20px;
+}
+.glow-on-hover {
+    font-family: "Sacramento", cursive;
+    font-size: 34px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    padding-top: 4px;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #4C585B;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.footer-link{
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+.footer-link:hover{
+    color:#ECDCBF;
+}
